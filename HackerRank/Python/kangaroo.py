@@ -4,14 +4,7 @@ import sys
 
 def kangaroo(x1, v1, x2, v2):
     # Complete this function
-    first = x1 + v1
-    second = x2 + v2
-    while (first != second):
-        first = first + v1
-        second = second + v2
-
-    print(first, second)
-    if first == second:
+    if (v2 < v1) and ((x2 - x1) % (v2 - v1)) == 0:
         return "YES"
     else:
         return "NO"
