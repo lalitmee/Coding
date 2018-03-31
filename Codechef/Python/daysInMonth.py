@@ -1,7 +1,5 @@
 #!/bin/python3
 
-import sys
-
 for isdfrgti in range(int(input())):
     s = list(map(str, input().strip().split(' ')))
     ddd = ['mon', 'tues', 'wed', 'thurs', 'fri', 'sat', 'sun']
@@ -14,6 +12,6 @@ for isdfrgti in range(int(input())):
         f[i] += 1
         i = (i+1) % 7
         j += 1
-    for i in f:
-        print(i, end=' ')
-    print()
+        for i in f:
+            print(i, end=' ')
+            print()
