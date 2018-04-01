@@ -6,12 +6,10 @@ for i in range(int(input())):
     oldSum = sum(sides)
     print(oldSum)
 
-    new  = list(set(sides))
+    new = list(set(sides))
     newSum = sum(new)
 
-    if (2*(newSum) == oldSum):
+    if (2 * (newSum) == oldSum):
         print("YES")
     else:
         print("NO")
-
-

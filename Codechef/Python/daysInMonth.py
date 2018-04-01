@@ -10,7 +10,7 @@ for isdfrgti in range(int(input())):
     j = 0
     while(j < int(s[0])):
         f[i] += 1
-        i = (i+1) % 7
+        i = (i + 1) % 7
         j += 1
         for i in f:
             print(i, end=' ')
