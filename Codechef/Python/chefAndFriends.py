@@ -1,6 +1,8 @@
 n = int(input())
 s = 'chef'
 c = 0
+
+# while loop starts
 while n > 0:
     n = n - 1
     k = 0
