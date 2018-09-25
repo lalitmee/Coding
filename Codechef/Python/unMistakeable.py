@@ -1,4 +1,4 @@
-# longest number with the distinct charactes
+# longest number with the distinct characters
 
 n, k = input().split()
 
