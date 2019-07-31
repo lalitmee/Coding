@@ -25,3 +25,11 @@ def make_readable(seconds):
 def make_readable(seconds):
     return "{0:02d}:{1:02d}:{2:02d}".format(seconds / 3600, seconds / 60 % 60, seconds % 60)
 #+end_src
+*** 4
+#+begin_src python
+def make_readable(seconds):
+    h= seconds/60**2
+    m= (seconds%60**2)/60
+    s= (seconds%60**2%60)
+    return "%02d:%02d:%02d" % (h, m, s)
+#+end_src
