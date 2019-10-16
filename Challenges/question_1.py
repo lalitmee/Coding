@@ -1,6 +1,6 @@
 def balanced(str):
     characters_list = list(set(str))
-    frequencies = {}
+    frequencies = dict()
     for char in range(len(characters_list)):
         count = 0
         for sub_string in range(len(str)):
@@ -16,7 +16,7 @@ def balanced(str):
 
 if __name__ == "__main__":
     str = "x"
-    assert balanced("xxxyyyzzz")
-    assert balanced("pqq")
-    assert balanced("yyyxxx")
-    assert balanced("x")
+    assert balanced("xxxyyyzzz") == True
+    assert balanced("pqq") == False
+    assert balanced("yyyxxx") == True
+    assert balanced("x") == True
